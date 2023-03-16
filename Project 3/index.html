@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script defer src="js/validation.js"></script>
+        <script defer src="js/main.js"></script>
+        
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Claire Oakeson Photo</title>
+    
+    </head>
+
+    <body>
+        <header>
+            <h1 id="logo"><img src="img/logo.png" alt="logo">Claire Oakes Photo</h1>
+            
+                
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="client.html">Albums</a></li>
+                    <li><button id="darkMode">Dark Mode</button></li>
+                </ul>
+
+            </nav>
+        </header>
+        <main>
+
+            <!-- photo and booking screen -->
+            <section>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 10</div>
+                        <img src="img/slide/slide2.png" style="width: 100%;" alt="slide2">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 10</div>
+                        <img src="img/slide/slide6.png" alt="slide6">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 10</div>
+                        <img src="img/slide/slide1.png" alt="slide1">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 10</div>
+                        <img src="img/slide/slide5.png" alt="slide5">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 10</div>
+                        <img src="img/slide/maintitle.png" alt="maintitle">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 10</div>
+                        <img src="img/slide/slide7.png" alt="slide7">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 10</div>
+                        <img src="img/slide/slide8.png" alt="slide8">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 10</div>
+                        <img src="img/slide/slide9.png" alt="slide9">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">9 / 10</div>
+                        <img src="img/slide/slide10.png" alt="slide10">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">10 / 10</div>
+                        <img src="img/slide/slide11.png" alt="slide11">
+                    </div>
+
+
+                </div>
+                <script src="js/carousel.js"></script>
+
+            </section>
+            <section class="top">
+                <div id="container">
+                    <div>
+                        <h1>Ready to book?</h1>
+                        Please fill out the contact form and I will get back to you as soon as possible!
+                        Feel free to ask any questions you may have and I will gladly answer!
+                        Look forward to talking to you!
+                        <p>
+                        Claire Oakeson Photo.
+                        </p>
+                    </div>
+                    <div id="formpage">
+                        <form name="myform" id="myform" novapadate method="GET" action="https://wp.zybooks.com/form-viewer.php">
+                            <div>
+                                <p>
+                                    <label for="name">First Name:</label>
+                                    <input type="text" id="first-name" name="name" placeholder="Enter your name here">
+                                </p>
+                                <p id="first-name-out">
+                                </p>
+                                <p>
+                                    <label for="name">Last Name:</label>
+                                    <input type="text" id="last-name" name="name" placeholder="Enter your name here">
+                                </p>
+                                <p id="last-name-out">
+                                </p>
+
+                                <p>
+                                    <label for="address">Address:</label>
+                                    <input type="text" id="address" name="address" placeholder="Enter your address here">
+                                </p>
+                                <p id="address-out">
+                                </p>
+
+                                <p>
+                                    <label for="city">City:</label>
+                                    <input type="text" id="city" name="city" placeholder="Enter your city here">
+                                </p>
+                                <p id="city-out">
+                                </p>
+
+
+                                <p>
+                                    <label for="state">State:</label>
+                                    <input type="text" id="state" name="state" placeholder="Enter your state here">
+                                </p>
+                                <p id="state-out">
+                                </p>
+
+
+                                <p>
+                                    <label for="zip">Zip:</label>
+                                    <input type="text" id="zip" name="zip" placeholder="Enter your zip here">
+                                </p>
+                                <p id="zip-out">
+                                </p>
+
+                                <p>
+                                    <label for="phone">Cell Phone:</label>
+                                    <input type="text" id="phone" name="phone" placeholder="Enter your phone here">
+                                </p>
+                                <p id="phone-out">
+                                </p>
+
+                                <p>
+                                    <label for="email">Email:</label>
+                                    <input type="text" id="email" name="email" placeholder="Enter your email here">
+                                </p>
+                                <p id="email-out">
+                                </p>
+
+                                <p>
+                                    <h2>How did you find my page</h2>
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="instagram" name="find-pg" value="instagram">
+                                    <label for="instagram">Instagram</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="friends" name="find-pg" value="friends">
+                                    <label for="friends">Friends</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="facebook" name="find-pg" value="family">
+                                    <label for="family">Family</label>
+                                </p>
+                                <p id="instagram-out">
+                                    
+                                </p>
+                                <p>
+                                    <button type="submit" class="submitBtn">Send</button>
+                                </p>
+
+                                
+                            </div>
+                            
+                            <!-- <div>
+                                <p>
+                                    <label>Name: <input type="text" name="name" /></label>
+                                </p>
+                                <p>
+                                    <label>Email: <input type="email" name="email" /></label>
+                                </p>
+                                <p>
+                                    <label>Instagram: <input type="instagram" name="instagram" /></label>
+                                </p>
+                                
+                                <p>
+                                    <label>Photoshoot of interest:<p><textarea name="message"></textarea></p></label>
+                                </p>
+                                <p>
+                                    <button type="submit">Send</button>
+                                </p>
+                            </div> -->
+                        </form>
+                        <div id="success">
+                        </div>
+                    </div>
+            </div>
+              
+            </section>
+
+            <section>
+                <div id="container" class="aboutme">
+                    <img id="newImg" src="img/aboutmephoto.png" alt="aboutmephoto">
+                    <div>
+                        Hi my name is Claire, I've been doing photography for about 3 years. 
+                        I'm from Utah born and raised I love the landscape here and how beautiful the nature is.
+                        I'm attending Utah Valley University and studying elementary education.
+                        I'm an introver but I love meeting people and I'm so thankful fo the opportunity to capture part of peoples lives.
+                        I'm inspired by.
+                        Thank you so much for taking the time to look at my website.
+                        If you have any questions feel free to send them my way.
+                    </div>
+                </div>
+            </section>
+
+            <!-- other section -->
+
+            <section>
+                <div class="slideshow-container1">
+                    <div class="mySlides1 fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/slide1/slide1.png">
+                    </div>
+
+                    <div class="mySlides1 fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/slide1/slide2.png">
+                    </div>
+
+                    <div class="mySlides1 fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/slide1/slide2.1.png">
+                    </div>
+
+                    <div class="mySlides1 fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/slide1/slide3.png">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    
+
+                    
+
+                </div>
+                <script src="js/slideshowclick.js"></script>
+
+            </section>
+
+            <section>
+                <iframe height="500" width="600"style="display:block;margin-left:auto;margin-right:auto;" src="https://www.youtube.com/embed/7uPOReO4n3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+          
+        
+
+        </main>
+
+    </body>
+    <footer>
+        <section>
+            <a href="https://www.instagram.com/claireoakesphoto/" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/claire.oakeson.50" class="fa fa-facebook"></a>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+
+</html>

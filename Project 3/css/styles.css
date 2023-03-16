@@ -1,0 +1,575 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+body header {
+    font-size: xx-large;
+    /* background-color: beige; */
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    margin-bottom: -37px;
+    text-align: center;
+    font-family: papyrus;
+    
+
+}
+
+input.was-validated:invalid {
+    color: red;
+    border: 1px solid red;
+}
+  
+input.was-validated:invalid ~ div {
+    display: block;
+}
+input.was-validated:valid {
+    color: blue;
+    border: 1px solid blue;
+}
+  
+input.was-validated:valid ~ div {
+    display: block;
+}
+
+body header h1 {
+    font-family: Papyrus;
+
+}
+
+#logo {
+    display: grid;
+    grid-template-columns: 100px 75%;
+}
+
+
+/* main page */
+
+
+
+
+
+
+/* Main page slideshow */
+.mySlides {display: none;}
+.mySlides > img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+
+
+.portrait > div > img {
+    width: 350px;
+    height: 500px;
+}
+
+
+
+
+/* second slideshow */
+.mySlides1 {display: none;}
+
+.mySlides1 > img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slideshow-container1 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+
+
+/* The dots/bullets/indicators */
+
+
+
+/* On smaller screens, decrease text size */
+
+
+
+
+
+
+
+/* top section */
+.top  {
+    /* background-image: url(photo/couples.png); */
+    background-color: #28372F;
+}
+
+.top > form {
+    text-align: center;
+}
+
+/* links */
+a:link {
+    color: var(--font-color); 
+}   
+ 
+a:visited {
+    color: var(--font-color);  
+}   
+ 
+a:hover {
+    color: var(--accent-color); 
+}  
+ 
+a:active {
+    color: var(--accent-color);
+}   
+ 
+header {
+    background-color: white;
+    padding: 5px 0;
+    margin: 0;
+}
+ 
+header h1 {
+    color: var(--accent-color);
+    font-size: 3rem;
+    margin: 10px 10px;
+    text-shadow: 2px 2px 3px gray; 
+}
+ 
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+ 
+nav li {
+    display: inline;
+}
+ 
+nav li a {
+    text-decoration: none;  
+    padding: 10px 20px;
+}
+ 
+nav li a:hover {
+    color: white;
+    background-color: var(--accent-color);    
+}
+
+nav {
+    background: #D4D5CD;
+}
+
+
+.feature a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* about me page */
+.aboutme {
+    font-size: x-large;
+    background-color: #636f65;
+}
+
+.aboutme > img {
+    width: 300px;
+    
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    gap: 20px 50px;
+    padding:50px;
+    margin: auto;
+    
+    
+}
+
+
+
+
+/* BOTTOM MAIN PAGE */
+footer {
+    background-color: #D4D5CD;
+}
+
+
+
+
+
+
+/* Pricing page */
+.pricing {
+    justify-content: center;
+}
+
+.pricing > h1 {
+    font-size: xx-large;
+    text-align: center;
+
+    
+}
+
+.photos  {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+.pricing_container {
+    display: grid;
+    grid-template-areas: "picture1 picture2 picture3"
+                         "picture4 picture5 picture6";
+    justify-content: space-evenly;
+    gap: 20px 50px;
+    padding: 50px;
+    margin: auto; 
+
+}
+
+.pricing_container > figure:nth-of-type(1) {
+    grid-area: "picture1";
+
+}
+
+.pricing_container > figure:nth-of-type(2) {
+    grid-area: "picture2";
+    
+}
+
+.pricing_container > figure:nth-of-type(3) {
+    grid-area: "picture3";
+    
+}
+
+.pricing_container > figure:nth-of-type(4) {
+    grid-area: "picture4";
+    
+}
+
+.pricing_container > figure:nth-of-type(5) {
+    grid-area: "picture5";
+    
+}
+
+
+.pricing_container > figure:nth-of-type(6) {
+    grid-area: "picture6";
+    
+}
+
+
+
+
+
+
+
+/* Contact page */
+
+#photochange1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+    height: 600px;
+}
+
+details {
+    cursor: pointer;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-instagram {
+    background: #bb3ecc;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+/* Portrait page */
+.drop_down > div {
+    border-style: groove;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* Client page */
+
+/* .container1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    gap: 20px 50px;
+    padding: 50px;
+    margin: auto; 
+} */
+
+.container1 {
+    display: grid;
+    grid-template-areas: "picture1 picture2 picture3"
+                         "picture4 picture5 picture6";
+    justify-content: space-evenly;
+    gap: 20px 50px;
+    padding: 50px;
+    margin: auto; 
+}
+
+.container1 > figure:nth-of-type(1) {
+    grid-area: "picture1";
+
+}
+
+.container1 > figure:nth-of-type(2) {
+    grid-area: "picture2";
+    
+}
+
+.container1 > figure:nth-of-type(3) {
+    grid-area: "picture3";
+    
+}
+
+.container1 > figure:nth-of-type(4) {
+    grid-area: "picture4";
+    
+}
+
+.container1 > figure:nth-of-type(5) {
+    grid-area: "picture5";
+    
+}
+
+
+.container1 > figure:nth-of-type(6) {
+    grid-area: "picture6";
+    
+}
+
+.client_fig {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+.client_fig > figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.client_fig > a img {
+    width: 200px;
+}
+
+
+@media only screen and (max-width:768px) {
+    #container {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr;
+        
+    }
+
+    #container img {
+        width: 200px;
+        
+
+    }
+
+    #container div {
+        font-size: 12pt;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .pricing_container {
+        display: block;
+        
+    }
+
+    .drop_down > summary, div {
+        font-size: 18pt;
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    
+
+    .text {font-size: 11px}
+
+    .prev, .next, .text1 {font-size: 11px}
+
+    
+}
+
+
+@media only screen and (min-device-width: 250px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { 
+    #container {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr;
+        
+    }
+
+    #container img {
+        width: 200px;
+        
+
+    }
+
+    #container div {
+        font-size: 12pt;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .pricing_container {
+        grid-template-areas: "picture1 picture2"
+                             "picture3 picture4"
+                             "picture5 picture6";
+        
+    }
+
+    .container1 {
+        grid-template-areas: "picture1 picture2"
+                             "picture3 picture4"
+                             "picture5 picture6";
+    }
+
+    header  h1 {
+        font-size: 3rem;
+    }
+    
+    .pricing_container > figure {
+        font-size: 24pt;
+    }
+
+   
+
+    .text {font-size: 11px}
+
+    .prev, .next, .text1 {font-size: 11px}
+}
+
